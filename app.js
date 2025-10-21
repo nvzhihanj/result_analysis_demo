@@ -178,13 +178,22 @@ function updateChart() {
     const benchmark = data.benchmarks.find(b => b.name === currentBenchmark);
     if (!benchmark) return;
     
-    // Filter and paginate systems
+    // Filter systems by benchmark
     filteredSystems = filterSystemsByBenchmark(currentBenchmark);
+    
+    // Sort systems by Offline score (highest first)
+    filteredSystems.sort((a, b) => {
+        const aOffline = a.results[currentBenchmark]['Offline'] || 0;
+        const bOffline = b.results[currentBenchmark]['Offline'] || 0;
+        return bOffline - aOffline;  // Descending order
+    });
+    
+    // Paginate after sorting
     const paginatedSystems = getPaginatedSystems(filteredSystems, currentPage, pageSize);
     
     // Update info display
     document.getElementById('system-count').textContent = 
-        `${filteredSystems.length} systems`;
+        `${filteredSystems.length} systems (sorted by Offline score)`;
     document.getElementById('scenario-info').textContent = 
         `Scenarios: ${benchmark.scenarios.join(', ')}`;
     
