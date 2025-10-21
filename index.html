@@ -30,22 +30,44 @@
             </div>
         </div>
 
-        <!-- Chart Container -->
+        <!-- Chart Container - Per System -->
         <div class="chart-container">
-            <div id="chart"></div>
+            <div id="chart-per-system"></div>
             <div id="loading" class="loading">
                 <div class="spinner"></div>
                 <p>Loading data...</p>
             </div>
             
-            <!-- Pagination Controls (moved here, under chart) -->
-            <div id="pagination" class="pagination" style="display: none;">
-                <button id="prev-page" class="page-btn">← Previous</button>
-                <span id="page-info">Page 1 of 1</span>
-                <button id="next-page" class="page-btn">Next →</button>
+            <!-- Pagination Controls for Per-System Chart -->
+            <div id="pagination-per-system" class="pagination" style="display: none;">
+                <button id="prev-page-system" class="page-btn">← Previous</button>
+                <span id="page-info-system">Page 1 of 1</span>
+                <button id="next-page-system" class="page-btn">Next →</button>
                 <div class="page-size-control">
-                    <label for="page-size">Systems per page:</label>
-                    <select id="page-size">
+                    <label for="page-size-system">Systems per page:</label>
+                    <select id="page-size-system">
+                        <option value="10">10</option>
+                        <option value="20" selected>20</option>
+                        <option value="30">30</option>
+                        <option value="50">50</option>
+                        <option value="-1">All</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart Container - Per Accelerator -->
+        <div class="chart-container">
+            <div id="chart-per-accelerator"></div>
+            
+            <!-- Pagination Controls for Per-Accelerator Chart -->
+            <div id="pagination-per-accelerator" class="pagination" style="display: none;">
+                <button id="prev-page-accelerator" class="page-btn">← Previous</button>
+                <span id="page-info-accelerator">Page 1 of 1</span>
+                <button id="next-page-accelerator" class="page-btn">Next →</button>
+                <div class="page-size-control">
+                    <label for="page-size-accelerator">Systems per page:</label>
+                    <select id="page-size-accelerator">
                         <option value="10">10</option>
                         <option value="20" selected>20</option>
                         <option value="30">30</option>

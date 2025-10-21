@@ -131,7 +131,12 @@ select:focus {
     min-height: 600px;
 }
 
-#chart {
+.chart-container:last-of-type {
+    margin-bottom: 30px;
+}
+
+#chart-per-system,
+#chart-per-accelerator {
     width: 100%;
     min-height: 600px;
 }
