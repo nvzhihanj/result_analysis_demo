@@ -1,0 +1,2600 @@
+{
+  "metadata": {
+    "version": "5.1",
+    "generated_date": "2025-10-20 16:56:44",
+    "total_systems": 65,
+    "total_benchmarks": 6,
+    "description": "MLPerf Inference v5.1 Results - LLM Benchmarks Only"
+  },
+  "benchmarks": [
+    {
+      "name": "deepseek-r1",
+      "scenarios": [
+        "Offline",
+        "Server"
+      ],
+      "unit": "Samples/s"
+    },
+    {
+      "name": "llama2-70b-99",
+      "scenarios": [
+        "Interactive",
+        "Offline",
+        "Server"
+      ],
+      "unit": "Tokens/s"
+    },
+    {
+      "name": "llama2-70b-99.9",
+      "scenarios": [
+        "Interactive",
+        "Offline",
+        "Server"
+      ],
+      "unit": "Tokens/s"
+    },
+    {
+      "name": "llama3.1-405b",
+      "scenarios": [
+        "Interactive",
+        "Offline",
+        "Server"
+      ],
+      "unit": "Tokens/s"
+    },
+    {
+      "name": "llama3.1-8b-datacenter",
+      "scenarios": [
+        "Interactive",
+        "Offline",
+        "Server"
+      ],
+      "unit": "Samples/s"
+    },
+    {
+      "name": "mixtral-8x7b",
+      "scenarios": [
+        "Offline",
+        "Server"
+      ],
+      "unit": "Tokens/s"
+    }
+  ],
+  "systems": [
+    {
+      "public_id": "5.1-0001",
+      "organization": "AMD",
+      "system_name": "Supermicro AS-8125GS-TNMR2",
+      "accelerator": "AMD Instinct MI300X 192GB HBM3",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 27803.9,
+          "Server": 24593.77,
+          "Interactive": 8840.42
+        },
+        "llama2-70b-99.9": {
+          "Offline": 27803.9,
+          "Server": 24593.77,
+          "Interactive": 8840.42
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 53017.3,
+          "Server": 47804.3
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0002",
+      "organization": "AMD",
+      "system_name": "QuantaGrid D74A-7U",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34520.4,
+          "Server": 32027.57,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34520.4,
+          "Server": 32027.57,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 68781.4,
+          "Server": 59783.6
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0003",
+      "organization": "AMD",
+      "system_name": "QuantaGrid D74A-7U",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34555.0,
+          "Server": null,
+          "Interactive": 18407.2
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34555.0,
+          "Server": null,
+          "Interactive": 18407.2
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0005",
+      "organization": "ASUSTeK",
+      "system_name": "ESC8000A-E12 (8x H200-NVL-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-NVL-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 30487.0,
+          "Server": 25614.68,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 30490.8,
+          "Server": 24554.71,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0006",
+      "organization": "ASUSTeK",
+      "system_name": "ESC_A8A_MI325X_256GBx8",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 33987.4,
+          "Server": 31241.01,
+          "Interactive": 15566.2
+        },
+        "llama2-70b-99.9": {
+          "Offline": 33987.4,
+          "Server": 31241.01,
+          "Interactive": 15566.2
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 68121.2,
+          "Server": 55800.3
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0007",
+      "organization": "ASUSTeK",
+      "system_name": "ASUSTeK ESC N8 H200 (8x H200-SXM-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 35075.1,
+          "Server": 34193.81,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34887.2,
+          "Server": 29026.93,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 61372.4,
+          "Server": 59992.8
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0008",
+      "organization": "Azure",
+      "system_name": "ND_GB200_v6",
+      "accelerator": "NVIDIA GB200",
+      "num_accelerators": 4.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 52061.6,
+          "Server": 46016.49,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 847.23,
+          "Server": 584.01,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0009",
+      "organization": "Broadcom_Supermicro",
+      "system_name": "Supermicro SYS-422GA-NBRT-LCC (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1650.43,
+          "Server": 1243.86,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0011",
+      "organization": "Cisco",
+      "system_name": "Cisco UCS C845A M8 (8x H200-NVL-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-NVL-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 50776.8,
+          "Server": 38696.9,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0013",
+      "organization": "Cisco",
+      "system_name": "Cisco UCS C885A M8 (16x H200-SXM-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 2.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 68894.8,
+          "Server": 66438.96,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 68894.8,
+          "Server": 66438.96,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1086.01,
+          "Server": 584.29,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0014",
+      "organization": "Cisco",
+      "system_name": "Cisco UCS C885A M8 (8x H200-SXM-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34548.2,
+          "Server": 33163.34,
+          "Interactive": 19621.9
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34548.2,
+          "Server": 33163.34,
+          "Interactive": 19621.9
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 58304.3,
+          "Server": 41291.0,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0015",
+      "organization": "Cisco",
+      "system_name": "HPF HGX System (16xH100-SXM-80GB TensorRT)",
+      "accelerator": "NVIDIA H100-SXM-80GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 2.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 62351.6,
+          "Server": 61101.32,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 62351.6,
+          "Server": 61101.32,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 783.13,
+          "Server": 563.37,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0016",
+      "organization": "Cisco",
+      "system_name": "HPF HGX System (32xH100-SXM-80GB TensorRT)",
+      "accelerator": "NVIDIA H100-SXM-80GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 4.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 124879.0,
+          "Server": 122273.72,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 124879.0,
+          "Server": 122273.72,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1561.57,
+          "Server": 1126.94,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0017",
+      "organization": "Cisco",
+      "system_name": "X210M8-1-node-2S-GNR_86C",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 819.62,
+          "Server": 257.75,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0023",
+      "organization": "Dell",
+      "system_name": "Dell PowerEdge XE7745 (8x H200-NVL-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-NVL-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 31267.4,
+          "Server": 29070.31,
+          "Interactive": 16419.2
+        },
+        "llama2-70b-99.9": {
+          "Offline": 31267.4,
+          "Server": 29070.31,
+          "Interactive": 16419.2
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0024",
+      "organization": "Dell",
+      "system_name": "Dell PowerEdge XE9680L (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": 30493.3,
+          "Server": 13913.3
+        },
+        "llama2-70b-99": {
+          "Offline": 101253.0,
+          "Server": 99139.18,
+          "Interactive": 60137.6
+        },
+        "llama2-70b-99.9": {
+          "Offline": 101253.0,
+          "Server": 99139.18,
+          "Interactive": 60137.6
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 143309.0,
+          "Server": 128787.0,
+          "Interactive": 102907.0
+        },
+        "llama3.1-405b": {
+          "Offline": 1648.03,
+          "Server": 1243.17,
+          "Interactive": 751.37
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0025",
+      "organization": "Dell",
+      "system_name": "Dell PowerEdge XE9680L (8x H200-SXM-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34588.3,
+          "Server": 33161.44,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34588.3,
+          "Server": 33161.44,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0026",
+      "organization": "Dell",
+      "system_name": "Dell PowerEdge XE9680 (8xH200-SXM-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 35316.7,
+          "Server": 33244.25,
+          "Interactive": 21915.6
+        },
+        "llama2-70b-99.9": {
+          "Offline": 35316.7,
+          "Server": 33244.25,
+          "Interactive": 21915.6
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0027",
+      "organization": "Dell",
+      "system_name": "Dell Poweredge XE9680",
+      "accelerator": "AMD Instinct MI300X 192GB HBM3",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 27325.9,
+          "Server": 24747.58,
+          "Interactive": 8455.14
+        },
+        "llama2-70b-99.9": {
+          "Offline": 27325.9,
+          "Server": 24747.58,
+          "Interactive": 8455.14
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 53333.9,
+          "Server": 47801.9
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0028",
+      "organization": "Dell",
+      "system_name": "Dell PowerEdge XE9685L (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": 30766.5,
+          "Server": 13963.0
+        },
+        "llama2-70b-99": {
+          "Offline": 102131.0,
+          "Server": 99214.41,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 102131.0,
+          "Server": 99214.41,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 143904.0,
+          "Server": 128794.0,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1660.71,
+          "Server": 1246.56,
+          "Interactive": 751.59
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0029",
+      "organization": "Dell_Broadcom",
+      "system_name": "Dell PowerEdge XE9680 (8x H200-SXM-141GBVMware ESXi 9.0.0)",
+      "accelerator": "Virtualized NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34301.9,
+          "Server": 33384.69,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34485.7,
+          "Server": 33370.58,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 547.26,
+          "Server": 277.33,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0030",
+      "organization": "Dell_MangoBoost",
+      "system_name": "Dell PowerEdge XE9680 (2x8x MI300X-192GB MangoBoost-LLMBoost)",
+      "accelerator": "AMD Instinct MI300X 192GB HBM3",
+      "num_accelerators": 8.0,
+      "num_nodes": 2.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 53572.2,
+          "Server": 47561.71,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 53572.2,
+          "Server": 47561.71,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0031",
+      "organization": "Dell_MangoBoost",
+      "system_name": "Dell PowerEdge XE9680 (8x MI300X-192GB MangoBoost-LLMBoost)",
+      "accelerator": "AMD Instinct MI300X 192GB HBM3",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 27678.1,
+          "Server": 24532.7,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 27678.1,
+          "Server": 24532.7,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0045",
+      "organization": "GigaComputing",
+      "system_name": "G893-ZX1-AAX2",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34483.2,
+          "Server": 32139.41,
+          "Interactive": 18825.9
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34483.2,
+          "Server": 32139.41,
+          "Interactive": 18825.9
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 69692.0,
+          "Server": 58242.7
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0046",
+      "organization": "GigaComputing",
+      "system_name": "G894-SD1",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": 30873.9,
+          "Server": 15977.9
+        },
+        "llama2-70b-99": {
+          "Offline": 98607.7,
+          "Server": 99065.98,
+          "Interactive": 62851.2
+        },
+        "llama2-70b-99.9": {
+          "Offline": 98607.7,
+          "Server": 99065.98,
+          "Interactive": 62851.2
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 142136.0,
+          "Server": 128660.0,
+          "Interactive": 102829.0
+        },
+        "llama3.1-405b": {
+          "Offline": 1625.66,
+          "Server": 1244.97,
+          "Interactive": 719.41
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0047",
+      "organization": "Google",
+      "system_name": "NVIDIA DGX B200 (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": 31920.3,
+          "Server": 14630.7
+        },
+        "llama2-70b-99": {
+          "Offline": 78463.5,
+          "Server": 99169.78,
+          "Interactive": 52140.7
+        },
+        "llama2-70b-99.9": {
+          "Offline": 78463.5,
+          "Server": 99169.78,
+          "Interactive": 52140.7
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 141138.0,
+          "Server": 119628.0,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1655.36,
+          "Server": 1246.79,
+          "Interactive": 750.45
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0048",
+      "organization": "Google",
+      "system_name": "NVIDIA H200 (8x H200-SXM-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 35043.7,
+          "Server": null,
+          "Interactive": 19554.7
+        },
+        "llama2-70b-99.9": {
+          "Offline": 35043.7,
+          "Server": null,
+          "Interactive": 19554.7
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0049",
+      "organization": "HPE",
+      "system_name": "HPE Cray XD670 (8x H200-SXM-141GB)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34964.6,
+          "Server": 33164.39,
+          "Interactive": 20432.1
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34797.0,
+          "Server": 33144.07,
+          "Interactive": 20356.8
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 66036.8,
+          "Server": 64914.6,
+          "Interactive": 53475.2
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 62108.4,
+          "Server": 60955.1
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0051",
+      "organization": "HPE",
+      "system_name": "HPE ProLiant Compute DL380a Gen12 (8x RTX Pro 6000 Blackwell Server Edition)",
+      "accelerator": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 26205.8,
+          "Server": 26005.9,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 26205.3,
+          "Server": 26001.04,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 46841.8,
+          "Server": 46060.0,
+          "Interactive": 36052.3
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 32738.8,
+          "Server": 30134.3
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0055",
+      "organization": "Intel",
+      "system_name": "1-node-2S-GNR_128C",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 1232.89,
+          "Server": 450.84,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0056",
+      "organization": "Intel",
+      "system_name": "1-node-4x-BMG-Pro-B60-Dual",
+      "accelerator": "[MAXSUN] MS-Intel Arc Pro B60 Dual 48G Turbo",
+      "num_accelerators": 4.0,
+      "num_nodes": 1.0,
+      "num_processors": 1.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 3009.38,
+          "Server": 2110.05,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 3009.38,
+          "Server": 2110.05,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 6472.37,
+          "Server": 5348.45,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0058",
+      "organization": "Intel_VMware",
+      "system_name": "1-node-2S-GNR_86C_BareMetal",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 797.84,
+          "Server": 289.97,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0059",
+      "organization": "Intel_VMware",
+      "system_name": "1-node-2S-GNR_86C_ESXi_172VCPU-VM",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 774.12,
+          "Server": 260.99,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0060",
+      "organization": "Lambda",
+      "system_name": "NVIDIA DGX B200 (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 102725.0,
+          "Server": 99993.91,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1648.6,
+          "Server": 1246.79,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0061",
+      "organization": "Lenovo",
+      "system_name": "ThinkSystem SR680a V3 (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 102909.0,
+          "Server": 99159.27,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 102909.0,
+          "Server": 99203.92,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0062",
+      "organization": "Lenovo",
+      "system_name": "ThinkSystem SR780a V3 (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 146960.0,
+          "Server": 128689.0,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1637.11,
+          "Server": 1249.04,
+          "Interactive": 752.62
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0063",
+      "organization": "Lenovo",
+      "system_name": "ThinkSystem_SR650_V4_GNR_86C",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 776.85,
+          "Server": 275.78,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0065",
+      "organization": "MangoBoost",
+      "system_name": "MangoBoost Heterogeneous Cluster (4x8x MI300X-192GB 2x8x MI325X-256GB LLMBoost)",
+      "accelerator": "AMD Instinct MI300X 192GB HBM3 (x32) AMD Instinct MI325X 256GB HBM3e (x16)",
+      "num_accelerators": 8.0,
+      "num_nodes": 6.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 169197.0,
+          "Server": 153076.32,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 169197.0,
+          "Server": 153076.32,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0066",
+      "organization": "MangoBoost",
+      "system_name": "Supermicro AS-8125GS-TNMR2 (8x MI300X-192GB MangoBoost-LLMBoost)",
+      "accelerator": "AMD Instinct MI300X 192GB HBM3",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 27854.4,
+          "Server": 24860.48,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 27854.4,
+          "Server": 24860.48,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0067",
+      "organization": "MangoBoost",
+      "system_name": "MangoBoost (8x MI325X-256GB LLMBoost)",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34454.4,
+          "Server": 31671.85,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34454.4,
+          "Server": 31671.85,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0068",
+      "organization": "MiTAC",
+      "system_name": "G8825Z5",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 33703.0,
+          "Server": 31755.66,
+          "Interactive": 18846.1
+        },
+        "llama2-70b-99.9": {
+          "Offline": 33703.0,
+          "Server": 31755.66,
+          "Interactive": 18846.1
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 67964.4,
+          "Server": 57087.1
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0069",
+      "organization": "NVIDIA",
+      "system_name": "NVIDIA DGX B200 (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": 33379.0,
+          "Server": 18592.2
+        },
+        "llama2-70b-99": {
+          "Offline": 101527.0,
+          "Server": 99123.04,
+          "Interactive": 59545.4
+        },
+        "llama2-70b-99.9": {
+          "Offline": 101527.0,
+          "Server": 99123.04,
+          "Interactive": 59545.4
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 136752.0,
+          "Server": 128541.0,
+          "Interactive": 102903.0
+        },
+        "llama3.1-405b": {
+          "Offline": 1624.11,
+          "Server": 1240.42,
+          "Interactive": 751.37
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0070",
+      "organization": "NVIDIA",
+      "system_name": "(4x GB200-186GB_aarch64 TensorRT)",
+      "accelerator": "NVIDIA GB200",
+      "num_accelerators": 4.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 51736.9,
+          "Server": 49359.61,
+          "Interactive": 29745.6
+        },
+        "llama2-70b-99.9": {
+          "Offline": 51736.9,
+          "Server": 49359.61,
+          "Interactive": 29745.6
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0071",
+      "organization": "NVIDIA",
+      "system_name": "(72x GB200-186GB_aarch64 TensorRT)",
+      "accelerator": "NVIDIA GB200",
+      "num_accelerators": 4.0,
+      "num_nodes": 18.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": 289712.0,
+          "Server": 167578.0
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 14774.3,
+          "Server": 11614.3,
+          "Interactive": 9921.02
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0072",
+      "organization": "NVIDIA",
+      "system_name": "(72x GB300-288GB_aarch64 TensorRT)",
+      "accelerator": "NVIDIA GB300",
+      "num_accelerators": 4.0,
+      "num_nodes": 18.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": 420659.0,
+          "Server": 209328.0
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 16104.1,
+          "Server": 12248.4,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0073",
+      "organization": "Nebius",
+      "system_name": "Nebius B200 (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 101246.0,
+          "Server": 101610.58,
+          "Interactive": 59622.7
+        },
+        "llama2-70b-99.9": {
+          "Offline": 101246.0,
+          "Server": 101610.58,
+          "Interactive": 59622.7
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1659.5,
+          "Server": 1279.53,
+          "Interactive": 770.67
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0074",
+      "organization": "Nebius",
+      "system_name": "Nebius GB200 (4x GB200-186GB_aarch64 TensorRT)",
+      "accelerator": "NVIDIA GB200",
+      "num_accelerators": 4.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 49683.5,
+          "Server": 49215.88,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 49683.5,
+          "Server": 49215.88,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 855.82,
+          "Server": 596.11,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0075",
+      "organization": "Nebius",
+      "system_name": "Nebius H200 (8x H200-SXM-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 34812.1,
+          "Server": 34029.38,
+          "Interactive": 23079.9
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34812.1,
+          "Server": 34029.38,
+          "Interactive": 23079.9
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 552.75,
+          "Server": 295.36,
+          "Interactive": 202.78
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0076",
+      "organization": "Oracle",
+      "system_name": "BM.GPU.B200.8",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 145789.0,
+          "Server": 128649.0,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1615.85,
+          "Server": 1243.67,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0079",
+      "organization": "Quanta_Cloud_Technology",
+      "system_name": "QuantaGrid D74H-7U (8x H200-SXM-141GB TensorRT)",
+      "accelerator": "NVIDIA H200-SXM-141GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 35091.5,
+          "Server": 33356.25,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 34876.4,
+          "Server": 33352.57,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 56917.3,
+          "Server": 57970.4,
+          "Interactive": 54117.6
+        },
+        "llama3.1-405b": {
+          "Offline": 550.11,
+          "Server": 295.52,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0080",
+      "organization": "Quanta_Cloud_Technology",
+      "system_name": "D75E-4U_H200-NVL-141GBx4",
+      "accelerator": "NVIDIA H200-NVL-141GB",
+      "num_accelerators": 4.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 15057.6,
+          "Server": 13736.12,
+          "Interactive": 6709.74
+        },
+        "llama2-70b-99.9": {
+          "Offline": 15167.1,
+          "Server": 13730.69,
+          "Interactive": 6712.97
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 25180.8,
+          "Server": 25753.8,
+          "Interactive": 21944.1
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0081",
+      "organization": "Quanta_Cloud_Technology",
+      "system_name": "D75T-7U_8xMI325X",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 32760.5,
+          "Server": 31401.37,
+          "Interactive": 17633.0
+        },
+        "llama2-70b-99.9": {
+          "Offline": 32760.5,
+          "Server": 31401.37,
+          "Interactive": 17633.0
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 68218.7,
+          "Server": 59040.8
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0082",
+      "organization": "RedHat",
+      "system_name": "IBM Cloud gx3 instance 1xL40S-PCIE-48GB vLLM",
+      "accelerator": "NVIDIA L40S",
+      "num_accelerators": 1.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 1642.22,
+          "Server": 1207.14,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0083",
+      "organization": "RedHat",
+      "system_name": "Dell PowerEdge XE8640 (1xH100-SXM-80GB vLLM)",
+      "accelerator": "NVIDIA H100-SXM-80GB",
+      "num_accelerators": 1.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 5777.08,
+          "Server": 5103.99,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0084",
+      "organization": "Supermicro",
+      "system_name": "1-node-2S-GNR_128C",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 1195.93,
+          "Server": 450.87,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0085",
+      "organization": "Supermicro",
+      "system_name": "AS-8126GS-TNMR (8x MI325X)",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 33468.4,
+          "Server": 31646.17,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 33468.4,
+          "Server": 31646.17,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0086",
+      "organization": "Supermicro",
+      "system_name": "AS-4126GS-NBR-LCC (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 101516.0,
+          "Server": 99186.48,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 101865.0,
+          "Server": 99182.26,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 142955.0,
+          "Server": 128701.0,
+          "Interactive": 122269.0
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0087",
+      "organization": "Supermicro",
+      "system_name": "SYS-422GS-NBRT-LCC (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 102498.0,
+          "Server": 99181.07,
+          "Interactive": 60131.0
+        },
+        "llama2-70b-99.9": {
+          "Offline": 101696.0,
+          "Server": 99179.63,
+          "Interactive": 60119.9
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": 141056.0,
+          "Server": 122331.0,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1650.51,
+          "Server": 1244.69,
+          "Interactive": 750.94
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0088",
+      "organization": "Supermicro",
+      "system_name": "SYS-A21GE-NBRT (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 101359.0,
+          "Server": 99128.19,
+          "Interactive": 57418.0
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1621.72,
+          "Server": 1242.84,
+          "Interactive": 750.41
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0089",
+      "organization": "Supermicro",
+      "system_name": "SYS-422GA-NBRT-LCC (8x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 101859.0,
+          "Server": 99195.83,
+          "Interactive": 60140.3
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": 1641.34,
+          "Server": 1240.44,
+          "Interactive": 751.39
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0090",
+      "organization": "Supermicro_MangoBoost",
+      "system_name": "Supermicro AS-8126GS-TNMR (2x8x MI325X-256GB MangoBoost-LLMBoost)",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 2.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 65320.1,
+          "Server": 57391.79,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 65320.1,
+          "Server": 57391.79,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0091",
+      "organization": "Supermicro_MangoBoost",
+      "system_name": "Supermicro AS-8126GS-TNMR (2x8x MI325X-256GB MangoBoost-LLMBoost) and Supermicro AS-8125GS-TNMR2 (1x8x MI300X-192GB MangoBoost-LLMBoost)",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3E (x16) AMD Instinct MI300X 192GB HBM3 (x8)",
+      "num_accelerators": 8.0,
+      "num_nodes": 3.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 92158.2,
+          "Server": 80594.88,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": 92158.2,
+          "Server": 80594.88,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0095",
+      "organization": "Vultr",
+      "system_name": "Supermicro AS -8126GS-TNMR (8x MI325X)",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": 33762.5,
+          "Server": 30339.4,
+          "Interactive": 17709.6
+        },
+        "llama2-70b-99.9": {
+          "Offline": 33762.5,
+          "Server": 30339.4,
+          "Interactive": 17709.6
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0096",
+      "organization": "Vultr",
+      "system_name": "Supermicro AS -8126GS-TNMR (8x MI325X)",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": 70035.6,
+          "Server": 56653.7
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0097",
+      "organization": "CoreWeave",
+      "system_name": "(8x GB300-288GB_aarch64 TensorRT)",
+      "accelerator": "NVIDIA GB300",
+      "num_accelerators": 4.0,
+      "num_nodes": 2.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": 48047.0,
+          "Server": 22545.1
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        }
+      }
+    }
+  ]
+}

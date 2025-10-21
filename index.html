@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLPerf Inference v5.1 Results Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>MLPerf Inference v5.1 Results</h1>
+            <p class="subtitle">Interactive Visualization of LLM Benchmark Performance</p>
+        </header>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="control-group">
+                <label for="benchmark-select">Select Benchmark:</label>
+                <select id="benchmark-select">
+                    <option value="">Loading...</option>
+                </select>
+            </div>
+            <div class="info-box">
+                <span id="system-count">Loading...</span>
+                <span class="divider">|</span>
+                <span id="scenario-info">Select a benchmark to view results</span>
+            </div>
+        </div>
+
+        <!-- Chart Container -->
+        <div class="chart-container">
+            <div id="chart"></div>
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading data...</p>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>How to Use:</h3>
+            <ul>
+                <li><strong>Select Benchmark:</strong> Choose a benchmark from the dropdown menu</li>
+                <li><strong>Hover:</strong> Hover over data points to see detailed system information</li>
+                <li><strong>Legend:</strong> Click on legend items to show/hide specific systems</li>
+                <li><strong>Zoom:</strong> Use Plotly's built-in controls to zoom and pan</li>
+            </ul>
+        </div>
+
+        <!-- Pagination Controls -->
+        <div id="pagination" class="pagination" style="display: none;">
+            <button id="prev-page" class="page-btn">← Previous</button>
+            <span id="page-info">Page 1 of 1</span>
+            <button id="next-page" class="page-btn">Next →</button>
+            <div class="page-size-control">
+                <label for="page-size">Systems per page:</label>
+                <select id="page-size">
+                    <option value="10">10</option>
+                    <option value="20" selected>20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                    <option value="-1">All</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>
+                Data source: 
+                <a href="https://mlcommons.org/benchmarks/inference/" target="_blank" rel="noopener">
+                    MLCommons MLPerf Inference
+                </a>
+                | 
+                <a href="https://github.com/mlcommons/inference_results_v5.1" target="_blank" rel="noopener">
+                    Official Results Repository
+                </a>
+            </p>
+            <p class="timestamp">Data generated: <span id="data-timestamp">—</span></p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
