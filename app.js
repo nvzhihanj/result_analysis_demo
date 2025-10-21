@@ -317,7 +317,7 @@ function renderPerSystemChart(benchmark, paginatedSystems) {
         
         // Create hover template with full system info
         const hoverTemplate = 
-            '<b>%{fullData.name}</b><br>' +
+            `<b>${system.system_name}</b><br>` +
             'Scenario: %{x}<br>' +
             `Performance: %{y:.2f} ${benchmark.unit}<br>` +
             `Accelerator: ${system.accelerator}<br>` +
@@ -329,7 +329,7 @@ function renderPerSystemChart(benchmark, paginatedSystems) {
             x: xData,
             y: yData,
             name: truncateSystemName(system.system_name),  // Truncated for legend
-            fullName: system.system_name,  // Full name stored for reference
+            fullName: system.system_name,  // Full name for reference
             type: 'scatter',
             mode: 'lines+markers',
             line: {
@@ -455,7 +455,7 @@ function renderPerAcceleratorChart(benchmark, paginatedSystems) {
         
         // Create hover template with full system info
         const hoverTemplate = 
-            '<b>%{fullData.name}</b><br>' +
+            `<b>${system.system_name}</b><br>` +
             'Scenario: %{x}<br>' +
             `Performance: %{y:.2f} ${benchmark.unit} per accelerator<br>` +
             `Accelerator: ${system.accelerator}<br>` +
@@ -467,7 +467,7 @@ function renderPerAcceleratorChart(benchmark, paginatedSystems) {
             x: xData,
             y: yData,
             name: truncateSystemName(system.system_name),  // Truncated for legend
-            fullName: system.system_name,  // Full name stored for reference
+            fullName: system.system_name,  // Full name for reference
             type: 'scatter',
             mode: 'lines+markers',
             line: {
