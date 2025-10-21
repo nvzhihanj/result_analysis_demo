@@ -209,10 +209,10 @@ select:focus {
     gap: 20px;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: var(--bg-secondary);
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 4px var(--shadow);
+    margin-top: 20px;
+    background-color: var(--bg-tertiary);
+    border-radius: 6px;
+    border-top: 1px solid var(--border-color);
 }
 
 .page-btn {

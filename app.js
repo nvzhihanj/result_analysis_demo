@@ -198,20 +198,21 @@ function updateChart() {
     paginatedSystems.forEach((system, idx) => {
         const results = system.results[currentBenchmark];
         
-        // Get data for available scenarios
+        // Get data for all scenarios in order (use null for missing data)
+        // This ensures lines connect in the correct order: Offline -> Server -> Interactive
         const xData = [];
         const yData = [];
         
-        // Use consistent scenario order
+        // Use consistent scenario order - add ALL scenarios, use null for missing
         benchmark.scenarios.forEach(scenario => {
-            if (results[scenario] !== null && results[scenario] !== undefined) {
-                xData.push(scenario);
-                yData.push(results[scenario]);
-            }
+            xData.push(scenario);
+            const value = results[scenario];
+            // Add the value if it exists, otherwise add null
+            yData.push((value !== null && value !== undefined) ? value : null);
         });
         
-        // Skip if no valid data
-        if (yData.length === 0) return;
+        // Skip if ALL values are null (no valid data at all)
+        if (yData.every(v => v === null)) return;
         
         // Create hover template with full system info
         const hoverTemplate = 
