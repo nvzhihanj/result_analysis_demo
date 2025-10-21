@@ -1,14 +1,30 @@
 {
   "metadata": {
     "version": "5.1",
-    "generated_date": "2025-10-20 16:56:44",
-    "total_systems": 65,
-    "total_benchmarks": 6,
-    "description": "MLPerf Inference v5.1 Results - LLM Benchmarks Only"
+    "generated_date": "2025-10-20 20:46:18",
+    "total_systems": 83,
+    "total_benchmarks": 12,
+    "description": "MLPerf Inference v5.1 Results - All Benchmarks"
   },
   "benchmarks": [
     {
       "name": "deepseek-r1",
+      "scenarios": [
+        "Offline",
+        "Server"
+      ],
+      "unit": "Samples/s"
+    },
+    {
+      "name": "dlrm-v2-99",
+      "scenarios": [
+        "Offline",
+        "Server"
+      ],
+      "unit": "Samples/s"
+    },
+    {
+      "name": "dlrm-v2-99.9",
       "scenarios": [
         "Offline",
         "Server"
@@ -58,6 +74,36 @@
         "Server"
       ],
       "unit": "Tokens/s"
+    },
+    {
+      "name": "retinanet",
+      "scenarios": [
+        "Offline",
+        "Server"
+      ],
+      "unit": "Samples/s"
+    },
+    {
+      "name": "rgat",
+      "scenarios": [
+        "Offline"
+      ],
+      "unit": "Samples/s"
+    },
+    {
+      "name": "stable-diffusion-xl",
+      "scenarios": [
+        "Offline",
+        "Server"
+      ],
+      "unit": "Samples/s"
+    },
+    {
+      "name": "whisper",
+      "scenarios": [
+        "Offline"
+      ],
+      "unit": "Samples/s"
     }
   ],
   "systems": [
@@ -71,6 +117,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -97,6 +151,20 @@
         "mixtral-8x7b": {
           "Offline": 53017.3,
           "Server": 47804.3
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -110,6 +178,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -136,6 +212,20 @@
         "mixtral-8x7b": {
           "Offline": 68781.4,
           "Server": 59783.6
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -149,6 +239,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -175,6 +273,81 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0004",
+      "organization": "AMD",
+      "system_name": "Quanta S7PA",
+      "accelerator": "AMD Instinct MI325X 256GB HBM3e",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 18.59,
+          "Server": 16.2
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -190,6 +363,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": 580460.0,
+          "Server": 450100.0
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 348225.0,
+          "Server": 330555.0
         },
         "llama2-70b-99": {
           "Offline": 30487.0,
@@ -214,6 +395,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 13319.5,
+          "Server": 12801.9
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -227,6 +422,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -253,6 +456,20 @@
         "mixtral-8x7b": {
           "Offline": 68121.2,
           "Server": 55800.3
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -268,6 +485,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": 643122.0,
+          "Server": 591162.0
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 388058.0,
+          "Server": 370066.0
         },
         "llama2-70b-99": {
           "Offline": 35075.1,
@@ -292,6 +517,20 @@
         "mixtral-8x7b": {
           "Offline": 61372.4,
           "Server": 59992.8
+        },
+        "retinanet": {
+          "Offline": 14451.7,
+          "Server": 14406.0
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -305,6 +544,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -331,6 +578,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -344,6 +605,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -370,6 +639,81 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 31.84,
+          "Server": 28.7
+        },
+        "whisper": {
+          "Offline": 41927.4
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0010",
+      "organization": "Cisco",
+      "system_name": "C240M8-1-node-2S-GNR_86C",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": 498.42,
+          "Server": 400.42
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 1403.84
         }
       }
     },
@@ -383,6 +727,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -409,6 +761,81 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 13263.4,
+          "Server": 13202.8
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0012",
+      "organization": "Cisco",
+      "system_name": "Cisco UCS C845A M8 (8x L40S-48GB TensorRT)",
+      "accelerator": "NVIDIA L40S",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": 6518.39,
+          "Server": 6101.41
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -422,6 +849,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -448,6 +883,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -461,6 +910,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -487,6 +944,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 14923.3,
+          "Server": 14355.8
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 19.12,
+          "Server": 18.37
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -500,6 +971,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -526,6 +1005,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -539,6 +1032,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -565,6 +1066,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -580,6 +1095,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 12503.3,
+          "Server": 11801.7
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -604,6 +1127,325 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 501.26,
+          "Server": 400.42
+        },
+        "rgat": {
+          "Offline": 16102.2
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 1418.6
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0018",
+      "organization": "Dell",
+      "system_name": "PowerEdge R470 (2x L4-PCIE-24GB TensorRT)",
+      "accelerator": "NVIDIA L4-PCIe-24GB",
+      "num_accelerators": 2.0,
+      "num_nodes": 1.0,
+      "num_processors": 1.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": 458.51,
+          "Server": 428.12
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0019",
+      "organization": "Dell",
+      "system_name": "PowerEdge R570 (4x L4-PCIE-24GBx4 TensorRT)",
+      "accelerator": "NVIDIA L4-PCIe-24GB",
+      "num_accelerators": 4.0,
+      "num_nodes": 1.0,
+      "num_processors": 1.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": 905.51,
+          "Server": 813.99
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 1.01,
+          "Server": 0.88
+        },
+        "whisper": {
+          "Offline": 1397.01
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0020",
+      "organization": "Dell",
+      "system_name": "R770_XEON6787Px2",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 12421.2,
+          "Server": 11801.8
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0021",
+      "organization": "Dell",
+      "system_name": "Dell PowerEdge R7715 (3x H100-NVL-94GB TensorRT)",
+      "accelerator": "NVIDIA H100-NVL-94GB",
+      "num_accelerators": 3.0,
+      "num_nodes": 1.0,
+      "num_processors": 1.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 8301.9
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0022",
+      "organization": "Dell",
+      "system_name": "Dell PowerEdge XE7740 (8x L40S TensorRT)",
+      "accelerator": "NVIDIA L40S",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": 6509.66,
+          "Server": 6101.31
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 5.52,
+          "Server": 5.9
+        },
+        "whisper": {
+          "Offline": 9272.0
         }
       }
     },
@@ -617,6 +1459,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -643,6 +1493,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 13421.4,
+          "Server": 12601.3
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 17.09,
+          "Server": 16.22
+        },
+        "whisper": {
+          "Offline": 31674.1
         }
       }
     },
@@ -658,6 +1522,14 @@
         "deepseek-r1": {
           "Offline": 30493.3,
           "Server": 13913.3
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
         },
         "llama2-70b-99": {
           "Offline": 101253.0,
@@ -682,6 +1554,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 45024.2
         }
       }
     },
@@ -698,6 +1584,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 34588.3,
           "Server": 33161.44,
@@ -721,6 +1615,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 14542.8,
+          "Server": 13603.3
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 34014.3
         }
       }
     },
@@ -737,6 +1645,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 35316.7,
           "Server": 33244.25,
@@ -760,6 +1676,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 14960.7,
+          "Server": 13603.3
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -773,6 +1703,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -799,6 +1737,20 @@
         "mixtral-8x7b": {
           "Offline": 53333.9,
           "Server": 47801.9
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -814,6 +1766,14 @@
         "deepseek-r1": {
           "Offline": 30766.5,
           "Server": 13963.0
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
         },
         "llama2-70b-99": {
           "Offline": 102131.0,
@@ -838,6 +1798,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 32.29,
+          "Server": 28.47
+        },
+        "whisper": {
+          "Offline": 44922.4
         }
       }
     },
@@ -851,6 +1825,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -877,6 +1859,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 18.64,
+          "Server": 17.95
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -893,6 +1889,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 53572.2,
           "Server": 47561.71,
@@ -916,6 +1920,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -932,6 +1950,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 27678.1,
           "Server": 24532.7,
@@ -955,6 +1981,142 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0032",
+      "organization": "GATEOverflow",
+      "system_name": "GATE Overflow Intel Sapphire Rapids (2x RTX 4090)",
+      "accelerator": "NVIDIA GeForce RTX 4090",
+      "num_accelerators": 2.0,
+      "num_nodes": 1.0,
+      "num_processors": 1.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": 1760.45,
+          "Server": 1448.97
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0033",
+      "organization": "GATEOverflow",
+      "system_name": "GATE Overflow Intel Sapphire Rapids (2x RTX 4090)",
+      "accelerator": "NVIDIA GeForce RTX 4090",
+      "num_accelerators": 2.0,
+      "num_nodes": 1.0,
+      "num_processors": 1.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 104.95
         }
       }
     },
@@ -968,6 +2130,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -994,6 +2164,20 @@
         "mixtral-8x7b": {
           "Offline": 69692.0,
           "Server": 58242.7
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1009,6 +2193,14 @@
         "deepseek-r1": {
           "Offline": 30873.9,
           "Server": 15977.9
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
         },
         "llama2-70b-99": {
           "Offline": 98607.7,
@@ -1033,6 +2225,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": 632483.0
+        },
+        "stable-diffusion-xl": {
+          "Offline": 31.58,
+          "Server": 28.46
+        },
+        "whisper": {
+          "Offline": 42565.2
         }
       }
     },
@@ -1048,6 +2254,14 @@
         "deepseek-r1": {
           "Offline": 31920.3,
           "Server": 14630.7
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
         },
         "llama2-70b-99": {
           "Offline": 78463.5,
@@ -1072,6 +2286,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": 630364.0
+        },
+        "stable-diffusion-xl": {
+          "Offline": 32.12,
+          "Server": 28.46
+        },
+        "whisper": {
+          "Offline": 42755.7
         }
       }
     },
@@ -1085,6 +2313,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1111,6 +2347,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 14718.8,
+          "Server": 13603.3
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 34088.7
         }
       }
     },
@@ -1124,6 +2374,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1150,6 +2408,81 @@
         "mixtral-8x7b": {
           "Offline": 62108.4,
           "Server": 60955.1
+        },
+        "retinanet": {
+          "Offline": 14996.6,
+          "Server": 14205.6
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 34450.7
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0050",
+      "organization": "HPE",
+      "system_name": "HPE ProLiant Compute DL380a Gen12 (10x H200-NVL-141GB)",
+      "accelerator": "NVIDIA H200-NVL-141GB",
+      "num_accelerators": 10.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": 713817.0,
+          "Server": 650211.0
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 433591.0,
+          "Server": 413565.0
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1163,6 +2496,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1189,6 +2530,142 @@
         "mixtral-8x7b": {
           "Offline": 32738.8,
           "Server": 30134.3
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 11.08,
+          "Server": 10.88
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0052",
+      "organization": "HPE",
+      "system_name": "HPE ProLiant DL385 Gen11 (2x H200-NVL-141GB)",
+      "accelerator": "NVIDIA H200-NVL-141GB",
+      "num_accelerators": 2.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 7925.55
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0053",
+      "organization": "HPE",
+      "system_name": "HPE ProLiant Compute DL384 Gen12 (2x GH200-144GB_aarch64)",
+      "accelerator": "NVIDIA GH200 Grace Hopper Superchip 144GB",
+      "num_accelerators": 2.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": 174456.0,
+          "Server": 161030.0
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1204,6 +2681,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": 18495.5,
+          "Server": 18190.1
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 18495.5,
+          "Server": 18190.1
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -1228,6 +2713,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 708.25,
+          "Server": 579.51
+        },
+        "rgat": {
+          "Offline": 24121.9
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 2187.39
         }
       }
     },
@@ -1241,6 +2740,14 @@
       "num_processors": 1.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1267,6 +2774,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1282,6 +2803,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 12274.3,
+          "Server": 11801.6
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -1306,6 +2835,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 479.57,
+          "Server": 365.42
+        },
+        "rgat": {
+          "Offline": 13847.6
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 1481.52
         }
       }
     },
@@ -1321,6 +2864,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 11981.7,
+          "Server": 11566.1
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -1345,6 +2896,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 467.45,
+          "Server": 361.65
+        },
+        "rgat": {
+          "Offline": 12771.0
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 1420.5
         }
       }
     },
@@ -1358,6 +2923,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1384,6 +2957,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 32.57,
+          "Server": 28.46
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1397,6 +2984,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1423,6 +3018,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 43698.6
         }
       }
     },
@@ -1436,6 +3045,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1462,6 +3079,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": 618486.0
+        },
+        "stable-diffusion-xl": {
+          "Offline": 31.78,
+          "Server": 28.46
+        },
+        "whisper": {
+          "Offline": 44365.8
         }
       }
     },
@@ -1477,6 +3108,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 12230.0,
+          "Server": 11991.5
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -1501,6 +3140,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 468.73,
+          "Server": 375.46
+        },
+        "rgat": {
+          "Offline": 13621.2
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 1411.8
         }
       }
     },
@@ -1517,6 +3170,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 169197.0,
           "Server": 153076.32,
@@ -1540,6 +3201,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1556,6 +3231,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 27854.4,
           "Server": 24860.48,
@@ -1579,6 +3262,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1595,6 +3292,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 34454.4,
           "Server": 31671.85,
@@ -1618,6 +3323,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1631,6 +3350,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1657,6 +3384,20 @@
         "mixtral-8x7b": {
           "Offline": 67964.4,
           "Server": 57087.1
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1672,6 +3413,14 @@
         "deepseek-r1": {
           "Offline": 33379.0,
           "Server": 18592.2
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
         },
         "llama2-70b-99": {
           "Offline": 101527.0,
@@ -1696,6 +3445,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": 651230.0
+        },
+        "stable-diffusion-xl": {
+          "Offline": 31.78,
+          "Server": 28.46
+        },
+        "whisper": {
+          "Offline": 45333.4
         }
       }
     },
@@ -1709,6 +3472,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1735,6 +3506,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1750,6 +3535,14 @@
         "deepseek-r1": {
           "Offline": 289712.0,
           "Server": 167578.0
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -1774,6 +3567,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1789,6 +3596,14 @@
         "deepseek-r1": {
           "Offline": 420659.0,
           "Server": 209328.0
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -1813,6 +3628,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1826,6 +3655,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1852,6 +3689,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1865,6 +3716,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1891,6 +3750,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1904,6 +3777,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1930,6 +3811,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -1943,6 +3838,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -1969,6 +3872,142 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": 614344.0
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 43164.3
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0077",
+      "organization": "Oracle",
+      "system_name": "BM.GPU.GB200.4",
+      "accelerator": "NVIDIA GB200",
+      "num_accelerators": 4.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 22272.6
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0078",
+      "organization": "Quanta_Cloud_Technology",
+      "system_name": "1-node-2S-GNR_86C",
+      "accelerator": "N/A",
+      "num_accelerators": 0.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 12560.1,
+          "Server": 11801.5
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": 458.85,
+          "Server": 365.41
+        },
+        "rgat": {
+          "Offline": 12927.4
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 1414.52
         }
       }
     },
@@ -1984,6 +4023,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": 647861.0,
+          "Server": 585168.0
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 389330.0,
+          "Server": 370068.0
         },
         "llama2-70b-99": {
           "Offline": 35091.5,
@@ -2008,6 +4055,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 14539.5,
+          "Server": 13603.3
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 19.19,
+          "Server": 18.42
+        },
+        "whisper": {
+          "Offline": 33363.8
         }
       }
     },
@@ -2023,6 +4084,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": 263090.0,
+          "Server": 202030.0
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 159060.0,
+          "Server": 154025.0
         },
         "llama2-70b-99": {
           "Offline": 15057.6,
@@ -2047,6 +4116,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 6618.99,
+          "Server": 6600.5
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 8.36,
+          "Server": 7.83
+        },
+        "whisper": {
+          "Offline": 15061.7
         }
       }
     },
@@ -2060,6 +4143,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2086,6 +4177,20 @@
         "mixtral-8x7b": {
           "Offline": 68218.7,
           "Server": 59040.8
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -2099,6 +4204,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2125,6 +4238,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -2138,6 +4265,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2164,6 +4299,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -2179,6 +4328,14 @@
         "deepseek-r1": {
           "Offline": null,
           "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": 18928.6,
+          "Server": 18704.2
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -2203,6 +4360,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": 716.68,
+          "Server": 579.51
+        },
+        "rgat": {
+          "Offline": 25182.2
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 2196.65
         }
       }
     },
@@ -2216,6 +4387,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2242,6 +4421,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -2255,6 +4448,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2281,6 +4482,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 44708.6
         }
       }
     },
@@ -2294,6 +4509,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2320,6 +4543,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 43615.3
         }
       }
     },
@@ -2333,6 +4570,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2359,6 +4604,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 44140.9
         }
       }
     },
@@ -2372,6 +4631,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2398,6 +4665,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": 42827.1
         }
       }
     },
@@ -2414,6 +4695,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 65320.1,
           "Server": 57391.79,
@@ -2437,6 +4726,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -2453,6 +4756,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 92158.2,
           "Server": 80594.88,
@@ -2476,6 +4787,203 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0092",
+      "organization": "TheStage AI",
+      "system_name": "Nebius H100 (8x H100-SXM-80GB TheStageAI)",
+      "accelerator": "NVIDIA H100-SXM-80GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 18.1,
+          "Server": 17.86
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0093",
+      "organization": "University-of-Florida",
+      "system_name": "NVIDIA DGX B200 (1x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 1.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 3.99,
+          "Server": 3.48
+        },
+        "whisper": {
+          "Offline": null
+        }
+      }
+    },
+    {
+      "public_id": "5.1-0094",
+      "organization": "University-of-Florida",
+      "system_name": "NVIDIA DGX B200 (1x B200-SXM-180GB TensorRT)",
+      "accelerator": "NVIDIA B200-SXM-180GB",
+      "num_accelerators": 8.0,
+      "num_nodes": 1.0,
+      "num_processors": 2.0,
+      "results": {
+        "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
+        "llama2-70b-99": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama2-70b-99.9": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-8b-datacenter": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "llama3.1-405b": {
+          "Offline": null,
+          "Server": null,
+          "Interactive": null
+        },
+        "mixtral-8x7b": {
+          "Offline": null,
+          "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": 31.94,
+          "Server": 28.46
+        },
+        "whisper": {
+          "Offline": 41918.3
         }
       }
     },
@@ -2492,6 +5000,14 @@
           "Offline": null,
           "Server": null
         },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
+        },
         "llama2-70b-99": {
           "Offline": 33762.5,
           "Server": 30339.4,
@@ -2515,6 +5031,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -2528,6 +5058,14 @@
       "num_processors": 2.0,
       "results": {
         "deepseek-r1": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
           "Offline": null,
           "Server": null
         },
@@ -2554,6 +5092,20 @@
         "mixtral-8x7b": {
           "Offline": 70035.6,
           "Server": 56653.7
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     },
@@ -2569,6 +5121,14 @@
         "deepseek-r1": {
           "Offline": 48047.0,
           "Server": 22545.1
+        },
+        "dlrm-v2-99": {
+          "Offline": null,
+          "Server": null
+        },
+        "dlrm-v2-99.9": {
+          "Offline": null,
+          "Server": null
         },
         "llama2-70b-99": {
           "Offline": null,
@@ -2593,6 +5153,20 @@
         "mixtral-8x7b": {
           "Offline": null,
           "Server": null
+        },
+        "retinanet": {
+          "Offline": null,
+          "Server": null
+        },
+        "rgat": {
+          "Offline": null
+        },
+        "stable-diffusion-xl": {
+          "Offline": null,
+          "Server": null
+        },
+        "whisper": {
+          "Offline": null
         }
       }
     }

@@ -91,11 +91,17 @@ function formatBenchmarkName(name) {
     // Convert benchmark names to more readable format
     const nameMap = {
         'deepseek-r1': 'DeepSeek-R1',
+        'dlrm-v2-99': 'DLRM-v2-99',
+        'dlrm-v2-99.9': 'DLRM-v2-99.9',
         'llama2-70b-99': 'Llama2-70B-99',
         'llama2-70b-99.9': 'Llama2-70B-99.9',
         'llama3.1-8b-datacenter': 'Llama3.1-8B (Datacenter)',
         'llama3.1-405b': 'Llama3.1-405B',
-        'mixtral-8x7b': 'Mixtral-8x7B'
+        'mixtral-8x7b': 'Mixtral-8x7B',
+        'retinanet': 'RetinaNet',
+        'rgat': 'R-GAT',
+        'stable-diffusion-xl': 'Stable Diffusion XL',
+        'whisper': 'Whisper'
     };
     return nameMap[name] || name;
 }

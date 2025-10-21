@@ -16,15 +16,9 @@ from datetime import datetime
 from typing import Dict, List, Optional, Tuple
 
 
-# LLM benchmarks to extract (focus on LLM only)
-LLM_BENCHMARKS = {
-    'deepseek-r1',
-    'llama2-70b-99',
-    'llama2-70b-99.9',
-    'llama3.1-8b-datacenter',
-    'llama3.1-405b',
-    'mixtral-8x7b'
-}
+# Extract all benchmarks (set to None to include everything)
+# Previously filtered to LLM only, now including all benchmarks
+BENCHMARK_FILTER = None  # None means include all benchmarks
 
 
 class MLPerfParser:
@@ -100,8 +94,9 @@ class MLPerfParser:
             if scenario:
                 current_scenario = scenario
             
-            # Only store LLM benchmarks
-            if current_benchmark in LLM_BENCHMARKS and current_scenario and unit:
+            # Store benchmark if it passes the filter (or if no filter is set)
+            should_include = (BENCHMARK_FILTER is None or current_benchmark in BENCHMARK_FILTER)
+            if should_include and current_benchmark and current_scenario and unit:
                 self.column_map[col_idx] = (current_benchmark, current_scenario, unit)
                 
                 # Track benchmark info
@@ -176,7 +171,7 @@ class MLPerfParser:
                 if value is not None:
                     has_results = True
         
-        # Only include systems that have at least one LLM result
+        # Only include systems that have at least one benchmark result
         if not has_results:
             return None
         
@@ -221,7 +216,7 @@ class MLPerfParser:
                 'generated_date': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                 'total_systems': len(self.systems),
                 'total_benchmarks': len(benchmarks),
-                'description': 'MLPerf Inference v5.1 Results - LLM Benchmarks Only'
+                'description': 'MLPerf Inference v5.1 Results - All Benchmarks'
             },
             'benchmarks': benchmarks,
             'systems': self.systems
@@ -238,8 +233,8 @@ def main():
     parser = MLPerfParser('inference51results.csv')
     data = parser.parse()
     
-    print(f"✓ Found {data['metadata']['total_benchmarks']} LLM benchmarks")
-    print(f"✓ Parsed {data['metadata']['total_systems']} systems with LLM results")
+    print(f"✓ Found {data['metadata']['total_benchmarks']} benchmarks")
+    print(f"✓ Parsed {data['metadata']['total_systems']} systems with results")
     
     # Print benchmark summary
     print("\n[2/3] Benchmark summary:")
