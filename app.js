@@ -259,8 +259,17 @@ function updateChart() {
     // Per-Accelerator: Sort by per-accelerator Offline score (highest first)
     filteredSystemsPerAccelerator = [...baseSystems];
     filteredSystemsPerAccelerator.sort((a, b) => {
-        const aOffline = (a.results[currentBenchmark]['Offline'] || 0) / (a.num_accelerators || 1);
-        const bOffline = (b.results[currentBenchmark]['Offline'] || 0) / (b.num_accelerators || 1);
+        // Calculate total compute units for each system
+        const aNodes = a.num_nodes || 1;
+        const aAccPerNode = a.num_accelerators || 0;
+        const aTotalCompute = aAccPerNode > 0 ? aNodes * aAccPerNode : aNodes;
+        
+        const bNodes = b.num_nodes || 1;
+        const bAccPerNode = b.num_accelerators || 0;
+        const bTotalCompute = bAccPerNode > 0 ? bNodes * bAccPerNode : bNodes;
+        
+        const aOffline = (a.results[currentBenchmark]['Offline'] || 0) / aTotalCompute;
+        const bOffline = (b.results[currentBenchmark]['Offline'] || 0) / bTotalCompute;
         return bOffline - aOffline;  // Descending order
     });
     
@@ -429,7 +438,17 @@ function renderPerAcceleratorChart(benchmark, paginatedSystems) {
     
     paginatedSystems.forEach((system, idx) => {
         const results = system.results[currentBenchmark];
-        const numAccelerators = system.num_accelerators || 1;  // Default to 1 if not specified
+        
+        // Calculate total compute units (accelerators or CPUs)
+        // Total = # of Nodes * # of Accelerators (when accelerators exist)
+        // Total = # of Nodes (when no accelerators, i.e., CPU-only)
+        const numNodes = system.num_nodes || 1;
+        const numAcceleratorsPerNode = system.num_accelerators || 0;
+        const totalComputeUnits = numAcceleratorsPerNode > 0 
+            ? numNodes * numAcceleratorsPerNode 
+            : numNodes;
+        
+        const numAccelerators = totalComputeUnits;  // Use total for calculations
         
         // Get data only for scenarios that have values
         // IMPORTANT: Use SCENARIO_ORDER (not benchmark.scenarios) to ensure correct visual line connections
@@ -453,13 +472,18 @@ function renderPerAcceleratorChart(benchmark, paginatedSystems) {
         // Skip if no valid data at all
         if (yData.length === 0) return;
         
-        // Create hover template with full system info
+        // Create hover template with full system info and calculation details
+        const computeLabel = numAcceleratorsPerNode > 0 ? 'accelerator' : 'node';
+        const calculationDetails = numAcceleratorsPerNode > 0
+            ? `Total Accelerators: ${totalComputeUnits} (${numNodes} nodes × ${numAcceleratorsPerNode})`
+            : `Total Nodes: ${totalComputeUnits}`;
+        
         const hoverTemplate = 
             `<b>${system.system_name}</b><br>` +
             'Scenario: %{x}<br>' +
-            `Performance: %{y:.2f} ${benchmark.unit} per accelerator<br>` +
+            `Performance: %{y:.2f} ${benchmark.unit} per ${computeLabel}<br>` +
+            `${calculationDetails}<br>` +
             `Accelerator: ${system.accelerator}<br>` +
-            `Count: ${system.num_accelerators}<br>` +
             `Organization: ${system.organization}` +
             '<extra></extra>';
         
