@@ -256,17 +256,19 @@ function updateChart() {
         return bOffline - aOffline;  // Descending order
     });
     
-    // Per-Accelerator: Sort by per-accelerator Offline score (highest first)
+    // Per-Accelerator: Sort by per-accelerator/per-processor Offline score (highest first)
     filteredSystemsPerAccelerator = [...baseSystems];
     filteredSystemsPerAccelerator.sort((a, b) => {
         // Calculate total compute units for each system
         const aNodes = a.num_nodes || 1;
         const aAccPerNode = a.num_accelerators || 0;
-        const aTotalCompute = aAccPerNode > 0 ? aNodes * aAccPerNode : aNodes;
+        const aProcessors = a.num_processors || 1;
+        const aTotalCompute = aAccPerNode > 0 ? aNodes * aAccPerNode : aNodes * aProcessors;
         
         const bNodes = b.num_nodes || 1;
         const bAccPerNode = b.num_accelerators || 0;
-        const bTotalCompute = bAccPerNode > 0 ? bNodes * bAccPerNode : bNodes;
+        const bProcessors = b.num_processors || 1;
+        const bTotalCompute = bAccPerNode > 0 ? bNodes * bAccPerNode : bNodes * bProcessors;
         
         const aOffline = (a.results[currentBenchmark]['Offline'] || 0) / aTotalCompute;
         const bOffline = (b.results[currentBenchmark]['Offline'] || 0) / bTotalCompute;
@@ -441,12 +443,13 @@ function renderPerAcceleratorChart(benchmark, paginatedSystems) {
         
         // Calculate total compute units (accelerators or CPUs)
         // Total = # of Nodes * # of Accelerators (when accelerators exist)
-        // Total = # of Nodes (when no accelerators, i.e., CPU-only)
+        // Total = # of Nodes * # of Processors (when no accelerators, i.e., CPU-only)
         const numNodes = system.num_nodes || 1;
         const numAcceleratorsPerNode = system.num_accelerators || 0;
+        const numProcessors = system.num_processors || 1;
         const totalComputeUnits = numAcceleratorsPerNode > 0 
             ? numNodes * numAcceleratorsPerNode 
-            : numNodes;
+            : numNodes * numProcessors;
         
         const numAccelerators = totalComputeUnits;  // Use total for calculations
         
@@ -473,10 +476,10 @@ function renderPerAcceleratorChart(benchmark, paginatedSystems) {
         if (yData.length === 0) return;
         
         // Create hover template with full system info and calculation details
-        const computeLabel = numAcceleratorsPerNode > 0 ? 'accelerator' : 'node';
+        const computeLabel = numAcceleratorsPerNode > 0 ? 'accelerator' : 'processor';
         const calculationDetails = numAcceleratorsPerNode > 0
             ? `Total Accelerators: ${totalComputeUnits} (${numNodes} nodes × ${numAcceleratorsPerNode})`
-            : `Total Nodes: ${totalComputeUnits}`;
+            : `Total Processors: ${totalComputeUnits} (${numNodes} nodes × ${numProcessors})`;
         
         const hoverTemplate = 
             `<b>${system.system_name}</b><br>` +
